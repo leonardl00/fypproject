@@ -14,6 +14,8 @@ class Product extends Model
         'product_name_short',
         'product_name_long',
         'product_cart_images_name',
+        'product_categories',
+        'product_catalog_images_name',
         'product_brand_id',
         'product_description',
         'product_base_price',
@@ -24,7 +26,7 @@ class Product extends Model
 
     protected $casts = [
         'product_featured'    =>  'boolean',
-        'product_stripe_id'  =>  'boolean'
+        'product_status'  =>  'boolean'
     ];
 
     public function brand(){

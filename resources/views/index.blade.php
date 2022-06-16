@@ -186,7 +186,7 @@
                 <span class="text-outline-light">Gaming</span> Monitors
             </h2>
             <div data-swiper-parallax-y="-25">
-                <a href="#" class="btn btn-psuedo text-white" role="button"
+                <a href="{{ route('product.index',['category' => 'monitor']) }}" class="btn btn-psuedo text-white" role="button"
                 >Browse Monitors</a
                 >
             </div>
@@ -522,7 +522,7 @@
                         <div class="swiper-slide align-self-stretch bg-transparent h-auto">
                             <div class="me-xl-n4 me-xxl-n5" data-aos="fade-up" data-aos-delay="000">
                                 <picture class="d-block mb-4 img-clip-shape-one">
-                                    <img class="w-100" title="" src="{{ asset('assets/images/products/product-'.$prod->product_id.'.webp') }}" alt=" ">
+                                    <img class="w-100" title="" src="{{ asset('assets/images/products/'.$prod->product_catalog_images_name) }}" alt=" ">
                                 </picture>
                                 <p class="title-small mb-2 text-muted">{{ $prod->brand->product_brand_name }}</p>
                                 <h4 class="lead fw-bold text-white">{{ $prod->product_name_short }}</h4>
@@ -574,7 +574,7 @@
             many more.
         </p>
         <p class="lead text-muted">
-            With worldwide shipping and unbeatable prices - now's a great time
+            With Malaysia-wide shipping and unbeatable prices - now's a great time
             to pick out something from our range.
         </p>
         <a href="{{ route('product.index') }}" class="btn btn-psuedo text-white" role="button"
@@ -617,7 +617,7 @@
     <!-- / Homepage Intro-->
 
     <!-- Homepage Banners-->
-    <div class="pt-7 mb-5 mb-lg-10">
+    {{--  <div class="pt-7 mb-5 mb-lg-10">
         <div class="row g-4">
         <div
             class="col-12 col-xl-6 position-relative"
@@ -733,7 +733,7 @@
                 <div class="card-overlay">
                     <p class="lead fw-bolder mb-2">MSI MPG Artymis</p>
                     <a
-                    href="#"
+                    href="{{ route('product.index',['category' => 'monitor']) }}"
                     class="btn btn-psuedo text-white py-2"
                     role="button"
                     >Shop Monitor</a
@@ -744,7 +744,7 @@
             </div>
         </div>
         </div>
-    </div>
+    </div> --}}
     <!-- / Homepage Banners-->
     </div>
 

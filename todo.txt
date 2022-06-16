@@ -11,20 +11,20 @@ product page ~ done
     suggestions ~ done
 payment based on cart
 payment webhook
-account
-    register
-    login
-    ordered
-    logout
-    settings
+account UI ~ done
+    register ~ done
+    login ~ done
+    ordered ~ done
+    logout ~ done
+    settings ~ done
 
-admin page
-login
-add/remove/edit product
+admin page UI ~ done
+login ~ done
+add/remove/edit product ~ done
 order
     list
     edit status
-account show/remove/edit
+account show/remove/edit ~ done
 
 database
 user
@@ -32,8 +32,25 @@ cart
 order
 
 add more product
-added some babyyy
+    added some
 
 search ~ done
 remove item cart ~ done
 index product featured ~ done
+
+route user
+    login / register
+        user
+        settings
+        pass
+        logout
+
+route admin
+    login
+        adminpage
+
+user
+    order list
+        order item
+            foreign
+            product

@@ -83,7 +83,7 @@ class="navbar navbar-expand-lg navbar-dark bg-dark flex-column border-0"
 
         <!-- Navbar Login-->
         <li class="ms-1 d-none d-lg-inline-block">
-        <a class="nav-link text-light" href="#"> Account </a>
+        <a class="nav-link text-light" href="{{ route('login') }}"> Account </a>
         </li>
         <!-- /Navbar Login-->
 
@@ -171,7 +171,7 @@ class="navbar navbar-expand-lg navbar-dark bg-dark flex-column border-0"
             Keyboard
             </a>
             <!-- Keyboard dropdown menu-->
-            <div class="dropdown-menu dropdown-megamenu">
+            <div class="dropdown-menu dropdown-megamenu visually-hidden">
             <div class="container-fluid">
                 <div class="row g-0 g-lg-3">
                 <!-- Keyboard Dropdown Menu Links Section-->
@@ -415,10 +415,10 @@ class="navbar navbar-expand-lg navbar-dark bg-dark flex-column border-0"
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{{ route('product.index',['category' => 'headphone']) }}" role="button"> Headphone </a>
+            <a class="nav-link" href="{{ route('product.index',['category' => 'monitor']) }}" role="button"> Monitor </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="{{ route('product.index',['category' => 'monitor']) }}" role="button"> Monitor </a>
+            <a class="nav-link" href="{{ route('product.index') }}" role="button"> All Products </a>
         </li>
         </ul>
         <!-- / Menu-->

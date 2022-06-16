@@ -21,6 +21,14 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'address_1',
+        'address_2',
+        'city',
+        'state',
+        'postal',
+        'phone',
+        'is_admin',
+        'created_at',
     ];
 
     /**
@@ -41,4 +49,13 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function setPasswordAttribute($value)
+    {
+    $this->attributes['password'] = bcrypt($value);
+    }
+
+    public function Booking(){
+        return $this->hasMany(Booking::class, 'user_id');
+    }
 }
